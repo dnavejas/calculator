@@ -5,23 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Calculator</title>
-        <script>
-        var calculator = new Object();
-        calculator.add = function (x,y){
-            return x + y;
-        }
-        calculator.subtract = function (x,y){
-            return x - y;
-        }
-        calculator.divide = function (x,y){
-            return x / y;
-        }
-        calculator.multiply = function (x,y) {
-            return x * y;
-        }
-        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container col-6 m-3">
+                    <div class="row top-buttons">
+                        <input class="col-3" type="button" id="btnadd" value="+"/>
+                        <input class="col-3" type="button" id="btnsubtract" value="-"/>
+                        <input class="col-3" type="button" id="btnmultiply" value="*"/>
+                        <input class="col-3" type="button" id="btndivide" value="/"/>
+                    </div>
+                    <div class="row top-buttons">    
+                        <input class="col-3" type="button" id="btnone" value="1"/>
+                        <input class="col-3" type="button" id="btntwo" value="2"/>
+                        <input class="col-3" type="button" id="btnthree" value="3"/>
+                    </div>
+                    <div class="row top-buttons">
+                        <input class="col-3" type="button" id="btnfour" value="4"/>
+                        <input class="col-3" type="button" id="btnfive" value="5"/>
+                        <input class="col-3" type="button" id="btnsix" value="6"/>
+                    </div>
+                    <div class="row top-buttons">
+                        <input class="col-3" type="button" id="btnseven" value="7"/>
+                        <input class="col-3" type="button" id="btneight" value="8"/>
+                        <input class="col-3" type="button" id="btnnine" value="9"/>
+                    </div>
+                    <div class="row top-buttons">
+                        <input class="col-3" type="button" id="btnzero" value="0"/>
+                        <input class="col-3" type="button" id="btndecimal" value="."/>
+                        <input class="col-3" type="button" id="btnclear" value="AC"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script rel="calculator.js"></script>
     </body>
 </html>
