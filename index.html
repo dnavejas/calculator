@@ -6,36 +6,41 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Calculator</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="container col-6 m-3">
+                <div class="container col-4 m-3">
+                    <div class="row">
+                        <div class="col-12 values" 
+                    </div>
                     <div class="row top-buttons">
                         <input class="col-3" type="button" id="btnadd" value="+"/>
                         <input class="col-3" type="button" id="btnsubtract" value="-"/>
                         <input class="col-3" type="button" id="btnmultiply" value="*"/>
                         <input class="col-3" type="button" id="btndivide" value="/"/>
                     </div>
-                    <div class="row top-buttons">    
-                        <input class="col-3" type="button" id="btnone" value="1"/>
-                        <input class="col-3" type="button" id="btntwo" value="2"/>
-                        <input class="col-3" type="button" id="btnthree" value="3"/>
+                    <div class="row number-buttons">    
+                        <input class="col-4" type="button" id="btnone" value="1"/>
+                        <input class="col-4" type="button" id="btntwo" value="2"/>
+                        <input class="col-4" type="button" id="btnthree" value="3"/>
                     </div>
-                    <div class="row top-buttons">
-                        <input class="col-3" type="button" id="btnfour" value="4"/>
-                        <input class="col-3" type="button" id="btnfive" value="5"/>
-                        <input class="col-3" type="button" id="btnsix" value="6"/>
+                    <div class="row number-buttons">
+                        <input class="col-4" type="button" id="btnfour" value="4"/>
+                        <input class="col-4" type="button" id="btnfive" value="5"/>
+                        <input class="col-4" type="button" id="btnsix" value="6"/>
                     </div>
-                    <div class="row top-buttons">
-                        <input class="col-3" type="button" id="btnseven" value="7"/>
-                        <input class="col-3" type="button" id="btneight" value="8"/>
-                        <input class="col-3" type="button" id="btnnine" value="9"/>
+                    <div class="row number-buttons">
+                        <input class="col-4" type="button" id="btnseven" value="7"/>
+                        <input class="col-4" type="button" id="btneight" value="8"/>
+                        <input class="col-4" type="button" id="btnnine" value="9"/>
                     </div>
-                    <div class="row top-buttons">
-                        <input class="col-3" type="button" id="btnzero" value="0"/>
-                        <input class="col-3" type="button" id="btndecimal" value="."/>
+                    <div class="row bottom-buttons">
+                        <input class="col-4" type="button" id="btnzero" value="0"/>
+                        <input class="col-2" type="button" id="btndecimal" value="."/>
                         <input class="col-3" type="button" id="btnclear" value="AC"/>
+                        <input class="col-3" type="button" id="btnenter" value="="/>
                     </div>
                 </div>
             </div>
