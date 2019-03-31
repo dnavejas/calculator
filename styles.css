@@ -1,12 +1,23 @@
 .values {
-
+    background-color: black;
+    color: white;
+    line-height: 24px;
+    text-align: right;
 }
 .top-buttons {
-
+ background-color: orange;
 }
-.number-buttons {
-
+.nmbr-btn {
+    background-color: blue;
+    color: yellow;
 }
 .bottom-buttons {
     
+}
+.clr-btn {
+    background-color: red;
+}
+.eql-btn {
+    background-color: black;
+    color: white;
 }

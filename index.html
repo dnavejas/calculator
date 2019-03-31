@@ -9,38 +9,38 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="container col-4 m-3">
+                <div class="container col-3 m-3">
                     <div class="row">
-                        <div class="col-12 values" 
+                        <input class="form-control col-12 values" type="text" id="display" placeholder="0" readonly/>
                     </div>
-                    <div class="row top-buttons">
-                        <input class="col-3" type="button" id="btnadd" value="+"/>
-                        <input class="col-3" type="button" id="btnsubtract" value="-"/>
-                        <input class="col-3" type="button" id="btnmultiply" value="*"/>
-                        <input class="col-3" type="button" id="btndivide" value="/"/>
+                    <div class="row">
+                        <input class="col-3 top-buttons" type="button" id="btnadd" value="+"/>
+                        <input class="col-3 top-buttons" type="button" id="btnsubtract" value="-"/>
+                        <input class="col-3 top-buttons" type="button" id="btnmultiply" value="*"/>
+                        <input class="col-3 top-buttons" type="button" id="btndivide" value="/"/>
                     </div>
                     <div class="row number-buttons">    
-                        <input class="col-4" type="button" id="btnone" value="1"/>
-                        <input class="col-4" type="button" id="btntwo" value="2"/>
-                        <input class="col-4" type="button" id="btnthree" value="3"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnone" value="1"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btntwo" value="2"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnthree" value="3"/>
                     </div>
                     <div class="row number-buttons">
-                        <input class="col-4" type="button" id="btnfour" value="4"/>
-                        <input class="col-4" type="button" id="btnfive" value="5"/>
-                        <input class="col-4" type="button" id="btnsix" value="6"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnfour" value="4"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnfive" value="5"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnsix" value="6"/>
                     </div>
-                    <div class="row number-buttons">
-                        <input class="col-4" type="button" id="btnseven" value="7"/>
-                        <input class="col-4" type="button" id="btneight" value="8"/>
-                        <input class="col-4" type="button" id="btnnine" value="9"/>
+                    <div class="row">
+                        <input class="col-4 nmbr-btn" type="button" id="btnseven" value="7"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btneight" value="8"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnnine" value="9"/>
                     </div>
                     <div class="row bottom-buttons">
-                        <input class="col-4" type="button" id="btnzero" value="0"/>
+                        <input class="col-4 nmbr-btn" type="button" id="btnzero" value="0"/>
                         <input class="col-2" type="button" id="btndecimal" value="."/>
-                        <input class="col-3" type="button" id="btnclear" value="AC"/>
-                        <input class="col-3" type="button" id="btnenter" value="="/>
+                        <input class="col-3 clr-btn" type="button" id="btnclear" value="AC"/>
+                        <input class="col-3 eql-btn" type="button" id="btnenter" value="="/>
                     </div>
                 </div>
             </div>
