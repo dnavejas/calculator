@@ -1,6 +1,6 @@
 .values {
     background-color: black;
-    color: white;
+    color: black;
     line-height: 24px;
     text-align: right;
 }
@@ -10,12 +10,14 @@
 .nmbr-btn {
     background-color: blue;
     color: yellow;
+    text-align: center;
 }
-.bottom-buttons {
-    
+.container {
+    box-sizing: none;
 }
 .clr-btn {
     background-color: red;
+    text-align: center;
 }
 .eql-btn {
     background-color: black;
