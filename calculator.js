@@ -3,12 +3,13 @@ let x = []
 let y = []
 
 $(":button").click(function() {
+
     let main_input = $("#display");
 
     let fired_button = $(this).val();
 
     if (fired_button === "AC") {
-        
+
         main_input.val(0);
 
     }
@@ -29,43 +30,33 @@ function add(x, y){
 }
 
 function subtract(x, y){
+
     return parseInt(x) - parseInt(y);
 }
 
 function divide(x, y){
+
     return parseInt(x) / parseInt(y);
 }
 
 function multiply(x, y) {
+
     return parseInt(x) * parseInt(y);
 }
 
 $("button").click(function() {
+
     var fired_button = $(this).val();
+
     alert(fired_button);
 });
 
 function splitValue(value, index) {
+
     return value.substring(0, index) + "," + value.substring(index);
 }
 
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
-
-function divide (x,y) {
-    return parseInt(x) / parseInt(y);
-}
-
-function subtract (x,y) {
-    return parseInt(x) - parseInt(y);
-}
-
-function multiply(x,y) {
-    return parseInt(x) * parseInt(y);
-}
-
-function add(x, y) {
-    return parseInt(x) + parseInt(y);
-}
 
 
 function cal (expression) {
@@ -79,6 +70,7 @@ function cal (expression) {
     let pushToXorY = true; 
 
     if (operators.length !== 0 && operators.length === 1) {
+
         let returnedValue;
 
         let values = expression.split(operators[0]);
@@ -86,12 +78,15 @@ function cal (expression) {
         if (operators[0] === "+") {
 
             returnedValue = add(values[0], values[1])
+
         } else if (operators[0] === "-") {
 
             returnedValue = subtract(values[0], values[1])
+
         } else if (operators[0] === "*") {
 
             returnedValue = multiply(values[0], values[1])
+
         } else if (operators[0] === "/") {
 
             returnedValue = divide(values[0], values[1])
@@ -99,6 +94,7 @@ function cal (expression) {
 
         $("#display").val(returnedValue)
     } else {
+
         for(let i = 0; i < expression.length; i++) {
 
             if (expression[i] !== "*" && expression[i] !== "+" && expression[i] !== "-" && expression[i] !== "/") {
@@ -139,6 +135,7 @@ function cal (expression) {
                     }
     
                     if (!!returnedValue) {
+                        
                         cal(returnedValue)
                     }
                 }
