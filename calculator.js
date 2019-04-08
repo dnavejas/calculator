@@ -10,7 +10,7 @@ $(":button").click(function() {
 
     if (fired_button === "AC") {
 
-        main_input.val(0);
+        main_input.val("");
 
     }
     else if (fired_button !== "=") {
